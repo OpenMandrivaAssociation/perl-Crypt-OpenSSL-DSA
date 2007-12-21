@@ -13,6 +13,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{module}-%{versio
 Url:		http://search.cpan.org/dist/%{module}
 BuildRequires:	perl-devel
 BuildRequires:	openssl-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Crypt::OpenSSL::DSA implements the DSA 
