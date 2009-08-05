@@ -10,6 +10,7 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{upstream_name}-%{upstream_version}.tar.bz2
+Patch0:     Crypt-OpenSSL-DSA-0.13-fix-error-format.patch
 
 BuildRequires:	perl-devel
 BuildRequires:	openssl-devel
@@ -24,6 +25,7 @@ OpenSSL crypto library, located at http://www.openssl.org
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
+%patch0 -b .format
 # perl path hack
 find . -type f | xargs %{__perl} -p -i -e "s|^#\!/usr/local/bin/perl|#\!/usr/bin/perl|g"
 
