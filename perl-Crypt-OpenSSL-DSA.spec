@@ -1,19 +1,19 @@
-%define module  Crypt-OpenSSL-DSA
-%define name	perl-%{module}
-%define version	0.13
-%define release	%mkrel 6
+%define upstream_name    Crypt-OpenSSL-DSA
+%define upstream_version 0.13
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Digital Signature Algorithm using OpenSSL
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{module}
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-devel
 BuildRequires:	openssl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Crypt::OpenSSL::DSA implements the DSA 
@@ -23,7 +23,7 @@ It is a thin XS wrapper to the DSA functions contained in the
 OpenSSL crypto library, located at http://www.openssl.org
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 # perl path hack
 find . -type f | xargs %{__perl} -p -i -e "s|^#\!/usr/local/bin/perl|#\!/usr/bin/perl|g"
 
@@ -47,4 +47,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/auto/Crypt
 %{perl_vendorarch}/Crypt
 %{_mandir}/*/*
-
