@@ -49,3 +49,71 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/auto/Crypt
 %{perl_vendorarch}/Crypt
 %{_mandir}/*/*
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.130.0-5
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Sat May 28 2011 Funda Wang <fwang@mandriva.org> 0.130.0-4
++ Revision: 680864
+- mass rebuild
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 0.130.0-3mdv2011.0
++ Revision: 555717
+- rebuild
+
+* Tue Apr 13 2010 Funda Wang <fwang@mandriva.org> 0.130.0-2mdv2010.1
++ Revision: 534174
+- rebuild
+
+* Wed Aug 05 2009 Jérôme Quelin <jquelin@mandriva.org> 0.130.0-1mdv2010.0
++ Revision: 410155
+- fixing error due to -Werror=format-security
+- rebuild using %%perl_convert_version
+
+* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.13-6mdv2009.0
++ Revision: 256273
+- rebuild
+
+* Thu Jan 24 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.13-4mdv2008.1
++ Revision: 157725
+- Rebuild for new perl
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0.13-2mdv2008.1
++ Revision: 131425
+- kill re-definition of %%buildroot on Pixel's request
+
+
+* Thu Aug 31 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.13-2mdv2007.0
+- Rebuild
+
+* Mon Nov 28 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.13-1mdk
+- New release 0.13
+- fix sources URL
+- spec cleanup
+
+* Tue Jun 07 2005 Nicolas L�cureuil <neoclust@mandriva.org> 0.12-2mdk
+- Fix Url according to Perl policy( thanks guillomovitch )
+
+* Tue Jun 07 2005 Nicolas L�cureuil <neoclust@mandriva.org> 0.12-1mdk
+- 0.12
+- Fix Description
+- Fix Source url
+- Fix Url
+- %%mkrel
+
+* Mon Nov 15 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.11-6mdk
+- Rebuild for new perl
+
+* Thu Apr 01 2004 Michael Scherer <misc@mandrake.org> 0.11-5mdk
+- do not own standard dir
+- [DIRM]
+
