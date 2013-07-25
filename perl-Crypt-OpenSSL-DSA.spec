@@ -1,15 +1,15 @@
 %define upstream_name    Crypt-OpenSSL-DSA
-%define upstream_version 0.13
+%define upstream_version 0.14
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	5
+Version:    %perl_convert_version 0.14
+Release:	1
 
 Summary:	Digital Signature Algorithm using OpenSSL
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/authors/id/T/TJ/TJMATHER/Crypt-OpenSSL-DSA-0.14.tar.gz
 Patch0:     Crypt-OpenSSL-DSA-0.13-fix-error-format.patch
 
 BuildRequires:	perl-devel
@@ -100,10 +100,10 @@ rm -rf %{buildroot}
 - fix sources URL
 - spec cleanup
 
-* Tue Jun 07 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.12-2mdk
+* Tue Jun 07 2005 Nicolas LÃ©cureuil <neoclust@mandriva.org> 0.12-2mdk
 - Fix Url according to Perl policy( thanks guillomovitch )
 
-* Tue Jun 07 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.12-1mdk
+* Tue Jun 07 2005 Nicolas LÃ©cureuil <neoclust@mandriva.org> 0.12-1mdk
 - 0.12
 - Fix Description
 - Fix Source url
@@ -116,4 +116,5 @@ rm -rf %{buildroot}
 * Thu Apr 01 2004 Michael Scherer <misc@mandrake.org> 0.11-5mdk
 - do not own standard dir
 - [DIRM]
+
 

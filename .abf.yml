@@ -1,2 +1,4 @@
+removed_sources:
+  Crypt-OpenSSL-DSA-0.13.tar.bz2: fb035d64054dba2a437a40673dab251dfc98aca2
 sources:
-  "Crypt-OpenSSL-DSA-0.13.tar.bz2": fb035d64054dba2a437a40673dab251dfc98aca2
+  Crypt-OpenSSL-DSA-0.14.tar.gz: 922d400715566200dcc79c71202a901bfc070696
