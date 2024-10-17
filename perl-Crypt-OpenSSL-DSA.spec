@@ -8,7 +8,7 @@ Release:	3
 Summary:	Digital Signature Algorithm using OpenSSL
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/authors/id/T/TJ/TJMATHER/Crypt-OpenSSL-DSA-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
