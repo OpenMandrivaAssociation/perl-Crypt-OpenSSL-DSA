@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/authors/id/T/TJ/TJMATHER/Crypt-OpenSSL-DSA-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	openssl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
