@@ -1,15 +1,15 @@
 %define upstream_name    Crypt-OpenSSL-DSA
-%define upstream_version 0.14
+%define upstream_version 0.20
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %{upstream_version}
+Release:	1
 
 Summary:	Digital Signature Algorithm using OpenSSL
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/authors/id/T/TJ/TJMATHER/Crypt-OpenSSL-DSA-%{upstream_version}.tar.gz
+Url:		https://github.com/kmx/perl-Crypt-OpenSSL-DSA
+Source0:	https://cpan.metacpan.org/authors/id/K/KM/KMX/Crypt-OpenSSL-DSA-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
