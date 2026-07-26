@@ -1,15 +1,13 @@
 %define upstream_name    Crypt-OpenSSL-DSA
-%define upstream_version 0.20
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    0.20
+Release:	2
 
 Summary:	Digital Signature Algorithm using OpenSSL
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/kmx/perl-Crypt-OpenSSL-DSA
-Source0:	https://cpan.metacpan.org/authors/id/K/KM/KMX/Crypt-OpenSSL-DSA-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/K/KM/KMX/Crypt-OpenSSL-DSA-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ It is a thin XS wrapper to the DSA functions contained in the
 OpenSSL crypto library, located at http://www.openssl.org
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 # perl path hack
 find . -type f | xargs %{__perl} -p -i -e "s|^#\!/usr/local/bin/perl|#\!/usr/bin/perl|g"
 
@@ -70,9 +68,7 @@ rm -rf %{buildroot}
 * Wed Aug 05 2009 Jérôme Quelin <jquelin@mandriva.org> 0.130.0-1mdv2010.0
 + Revision: 410155
 - fixing error due to -Werror=format-security
-- rebuild using %%perl_convert_version
-
-* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.13-6mdv2009.0
+- rebuild using %0.20 Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.13-6mdv2009.0
 + Revision: 256273
 - rebuild
 
